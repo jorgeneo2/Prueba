@@ -15,10 +15,14 @@ public class Monto_Escrito {
         String decenas[] = 
         {"veinte", "treinta","cuarenta","cincuenta", "sesenta",
             "setenta", "ochenta", "noventa"};
-                             
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese un numero entre 0-99: "); 
-        int num = scanner.nextInt();
+        String centenas[] =
+        {"cien","doscientos","trescientos","cuatroscientos","quinientos",
+        	"seiscientos","setescientos","ochoscientos","novescientos"};	
+    
+        Scanner sc = new Scanner(System.in);//crear un objeto Scanner
+        System.out.print("Ingrese un numero entre 0-99: ");
+        int num;
+        num =sc.nextInt();
         
         if(num>=0 && num<11)
              System.out.print('\n' + unidades[num]);         
@@ -32,11 +36,21 @@ public class Monto_Escrito {
             else
                 System.out.print('\n' + decenas[dec-2]
                                        + " y " + unidades[unid]);
+        }
+        else if(num<1000){
+            int unid = num % 10;
+            int dec = num/10;
+            int cent=num/10/10;
+            if(unid == 0)
+                System.out.print('\n' + centenas[cent-1]);  
+            else
+                System.out.print('\n' + decenas[dec-2]
+                                       + " y " + unidades[unid]);
+             
         }else            
             System.out.print("El numero debe ser menor a 100");
-        
-        
-        scanner.close();
-    }    
+       
+    } 
+    
     
 }
