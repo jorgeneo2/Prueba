@@ -35,8 +35,8 @@ class Monto_EscritoTest extends Monto_Escrito {
 	@Test
 	void testCentenas() {
 		Monto_Escrito centenas = new Monto_Escrito();
-		String resultadoEsperado = "doscientos";
-		String resultadoObtenido = centenas.calcularCentenas(2);
+		String resultadoEsperado = "cuatroscientos diez";
+		String resultadoObtenido = centenas.calcularCentenas(410);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 	@Test

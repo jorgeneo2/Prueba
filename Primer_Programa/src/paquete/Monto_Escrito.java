@@ -72,7 +72,7 @@ public class Monto_Escrito {
             else
             	resultado3=(centenas[cent-1] +" "+ decenas[(dec-1)]
                                        + " y " + unidades[unid]);
-		}
+        }
 			return resultado3;
 
 		}
