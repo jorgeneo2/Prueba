@@ -1,10 +1,8 @@
 package paquete;
 
-import java.util.Scanner;
 
 public class Monto_Escrito {
 	
-	String letra;
 	String resultado;
 	String resultado1;
 	String resultado2;
@@ -63,7 +61,7 @@ public class Monto_Escrito {
             int cent=num/10/10;
             if(unid == 0 && dec==0)
             	resultado3=(centenas[cent-1]);  
-            if(dec==0)
+            else if(dec==0)
             	resultado3=(centenas[cent-1] +" "+ unidades[unid]);   
             else if(dec == 1 && unid !=0)
             	resultado3=(centenas[cent-1] +" "+ especial[unid-1]);   
