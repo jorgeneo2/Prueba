@@ -97,6 +97,9 @@ public class Monto_Escrito {
             }
 		
             resultado4=(textoNum); 
+		}else {
+			resultado = "El número ingresado en de mas de 4 cifras";
+		
  
 		}
 			return resultado4;
