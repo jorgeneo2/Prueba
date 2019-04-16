@@ -9,7 +9,7 @@ class Monto_EscritoTest extends Monto_Escrito {
 	
 	
 
-	@Test
+	@Testing
 	void testUnidades() {
 		Monto_Escrito unidades = new Monto_Escrito();
 		String resultadoEsperado = "uno";
